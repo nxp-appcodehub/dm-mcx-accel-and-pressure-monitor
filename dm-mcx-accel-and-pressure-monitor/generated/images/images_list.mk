@@ -1,0 +1,1 @@
+GEN_CSRCS += _temp_sw_alpha_30x27.c _NXP_logo_dark_alpha_143x51.c

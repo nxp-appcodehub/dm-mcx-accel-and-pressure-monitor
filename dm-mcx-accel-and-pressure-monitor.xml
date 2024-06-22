@@ -1,0 +1,31 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" id="dm-mcx-accel-and-pressure-monitor" type="demo" format="projectfile" versionSchema="1.0.0" name="MCX Accel and Pressure Monitor">
+    <display_title>
+        Multi sensor demo with FRDM-MCXN947 and LDC-PAR-S035
+    </display_title>
+    <overview>
+        <![CDATA[This demo shows how to integrate the NXP sensors FXLS8974CF (3-axis accelerometer) and MPL3115 (absolute pressure) with FRDM-MCXN947 platform. Both sensors share the I2C bus of the Accel &amp; Pressure click board, that is used in the demo for digital communication between the MCXN947 and the sensors. The demo uses the LVGL graphics framework and a TFT Display (LCD-PAR-S035) to show sensor data]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXN947"></hw>
+    </nxp_compatible_hw>
+    <nxp_ebh_hw>
+        <ebh id="nxp_lcd_par_s035"></ebh>
+        <ebh id="mikroe_accel_pressure_click"></ebh>
+    </nxp_ebh_hw>
+    <peripherals>
+        <peripheral name="display"></peripheral>
+        <peripheral name="gpio"></peripheral>
+        <peripheral name="i2c"></peripheral>
+        <peripheral name="sensor"></peripheral>
+        <peripheral name="uart"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="sensor"></category>
+    </categories>
+</data:item>

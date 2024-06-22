@@ -1,0 +1,60 @@
+NXP Software Content Register
+
+Package: 			dm-mcx-accel-and-pressure-monitor
+Version: 			1.0
+Outgoing License: 		LA_OPT_Online Code Hosting NXP_Software_License - v1.2 October 2023 - Production Use, Section 2.1 applies
+Type of content:		source code
+License File:		LICENSE
+Description and comments: 	This demo shows how to integrate the NXP sensors FXLS8974CF (3-axis accelerometer) and MPL3115 (absolute pressure) with FRDM-MCXN947 platform.
+Release Location: 		https://github.com/nxp-appcodehub/dm-mcx-accel-and-pressure-monitor
+Origin: 			NXP (BSD-3 Clause) - https://spdx.org/licenses/BSD-3-Clause.html
+			ARM IAR Systems - ARM (Apache-2.0) - https://github.com/ARM-software/CMSIS_5/releases/tag/5.6.0
+			Amazon (MIT) - https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V10.4.3-LTS-Patch-2
+			LVGL Kft (MIT) - https://github.com/lvgl/lvgl/tree/v8.3.5
+
+
+dm-mcx-accel-and-pressure-monitor
+			Name: dm-mcx-accel-and-pressure-monitor
+			Version: 1.0
+			Outgoing License: BSD-3-Clause (https://spdx.org/licenses/BSD-3-Clause.html)
+			License File: COPYING-BSD-3
+			Format: source code
+			Description: This demo shows how to integrate the NXP sensors FXLS8974CF (3-axis accelerometer) and MPL3115 (absolute pressure) with FRDM-MCXN947 platform.
+			Release Location: https://github.com/nxp-appcodehub/dm-mcx-accel-and-pressure-monitor
+			Origin: NXP (BSD-3 Clause)
+
+MCUXpresso SDK		Name: MCUXpresso SDK
+			Version: 2.x
+			Outgoing License: BSD-3-Clause (https://spdx.org/licenses/BSD-3-Clause.html)
+			License File: COPYING-BSD-3
+			Format: source code
+			Description: NXP's MCUXpresso SDK is a comprehensive software enablement package designed to simplify and accelerate application development with NXP’s microcontrollers and crossover processors based on  Arm® Cortex®-M  cores. Component lib integration examples use MCUXpresso SDK to demonstrate usage.
+			Release Location: http://mcuxpresso.nxp.com/
+			Origin: NXP (BSD-3 Clause)
+			   
+CMSIS			Name: CMSIS
+			Version: 5.6.0
+			Outgoing License: Apache License 2.0
+			License file: CMSIS/LICENSE.txt
+			Format: source code
+			Description: Vendor-independent hardware abstraction layer for microcontrollers that are based on Arm® Cortex® processors, distributed by ARM® cores.
+			Release Location: https://github.com/ARM-software/CMSIS_5/releases/tag/5.6.0
+			Origin: IAR Systems - ARM (Apache-2.0)
+
+Amazon FreeRTOS		Name: Amazon FreeRTOS
+			Version: 3.2
+			Outgoing License: MIT License
+			License file: freertos/freertos_kernel/LICENSE.md
+			Format: source code
+			Description: Amazon FreeRTOS drivers
+			Release Location: https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V10.4.3-LTS-Patch-2
+			Origin: Amazon (MIT)
+                           
+Lvgl			Name: Lvgl
+			Version: 4.3.1
+			Outgoing License: MIT License
+			License file: lvgl/lvgl/LICENSE.txt
+			Format: source code
+			Description: Light and Versatile Embedded Graphics Library (LVGL).
+			Release Location:  https://github.com/lvgl/lvgl/tree/v8.3.5 
+			Origin: LVGL Kft (MIT)
