@@ -48,14 +48,15 @@ The GUI was designed with GUI Guider (NXP).
 - Mini/micro C USB cable
 
 ## 3. Setup<a name="step3"></a>
+The following instructions are based on MCUXpresso IDE.  However, similar steps can be followed for VS Code. Example includes linker files that allows demo to be imported and converted.<br>
 
 ### 3.1 Step 1: Connect Display to FRDM-MCXN947
 Check that the switch SW1 In the LCD is set to 010 (16bits 8080) and plug-in the LCD in the board (use the next image like reference) you should connect the LCD in the J8 header with two pins free in the top of the header.
 
 ![Alt text](images/freePINS.png)
 
-### 3.2 Step 2: Connect Accel & Pressure click board to FRDM-MCXN947
-Plug-in the Accel & Pressure click board (mikroe) onto the native mikroe slot of the FRDM board.  
+### 3.2 Step 2: Connect Accel & Pressure click board atop FRDM-MCXN947
+Plug-in the Accel & Pressure click board (mikroe) atop the native mikroe slot of the FRDM board.  
 Then plug-in the USB cable between the host PC and the FRDM-MCXN947.  
 *See the figure below for reference.*  
 
@@ -63,25 +64,24 @@ Then plug-in the USB cable between the host PC and the FRDM-MCXN947.
 
 ### 3.3 Step 3: Download and Install required Software(s)
 - Download [MCUXpresso IDE 2.19.0 or newer](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE?&tid=vanMCUXPRESSO/IDE) and Install following the installer instructions.
-- Download [MCXUpresso SDK 2.14.0 for FRDM-MCXN947](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXN947). Make sure to select ISSDK middleware while building SDK.
+- Download [MCXUpresso SDK 2.14.0 for FRDM-MCXN947](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXN947). Make sure to select ISSDK middleware while building SDK. **Make sure to change version to 2.14.00 and build SDK for MCUXpresso IDE.**
 - Install Git v2.39.0 (for cloning and running west commands)
 
-### 3.4 Step 4: Clone the APP-CODE-HUB/dm-fxls8974-and-mpl3115-sensor-monitor
-- Clone this repository to get the example project:
-- Change directory to cloned project folder:<br>
-    cd *dm-fxls8974-and-mpl3115-sensor-monitor*
-
-
-
-### 3.5 Step 5: Build demo project
+### 3.4 Step 4: Build demo project
 - Open MCUXpresso IDE and select a directory to create your workspace.
 - Install "MCXUpresso SDK 2.14.0 for FRDM-MCXN947" (drag and drop SDK zip into "Installed SDK" view) into MCUXpresso IDE.
-- Go to "Quickstart Panel" and click on "Import Project(s) from file system",
-- Select "Project directory (unpacked)" and browse to the cloned project folder.
-- Select example projects that you want to open and run.
+- Go to "Quickstart Panel" and click on "Import from Application Code Hub".<br><br>
+![Alt text](images/import_ACH.png)<br><br>
+- Enter "Accel and Pressure sensor demo" in search bar.  Select project card.
+- Click "GitHub link" within wizard to copy github information into IDE wizard.<br><br>
+![Alt text](images/source_link.png)<br><br>
+- Continue to follow the default steps of the Wizard.  Click Next, Click Next for "main" branch.
+- Select the desired destination to store the imported project.  Initial branch = main.  Click Next.
+- Click next to select the discovered Eclipse projects.
+- Click Finish to complete the import into workspace.
+<br><br>
+![Alt text](images/build.png)<br><br>
 - Right click on project and select build to start building the project.
-
-
 
 ## 4. Results<a name="step4"></a>
 *The demo will start running inmediately after the FW is downloaded to the target from MCUXpresso.*  
